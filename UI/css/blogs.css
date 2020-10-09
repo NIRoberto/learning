@@ -1,0 +1,440 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+}
+/*-------nav-bar -------*/
+.nav {
+    background-color: white;
+    height: 50px ;
+    box-shadow: 1px 1px 1px grey;
+    position: relative;
+   }
+.logo{
+   
+      color:black;
+      font-size: 35px ;
+      padding :0px  0 10px  50px;
+      font-family: 'Lobster', cursive;
+      text-align: start;
+      display: flex;
+      justify-content: start;
+      
+    }
+    .nav-section{
+       margin: 0;
+    }
+    .nav-list{
+        float: right;
+        list-style: none;
+     padding: 5px 100px  ;
+        margin:0;
+    }
+    .nav-ilist{
+         display: inline-block;
+        color :black;
+ }
+ .nav-link{
+    padding:14px 28px;
+     color:black;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-family: 'Roboto', sans-serif;
+     font-weight: bold;
+ }
+ .nav:hover{
+     box-shadow: 3px 3px 3px grey;   
+    }
+    .nav-link:hover{
+color:rgb(12, 90, 236);
+}
+.nav-link:active{
+    color:rgb(12, 90, 236);
+}
+#profile{
+    float: right;
+    margin-right:0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0rem 0rem  0rem 10rem;
+    }
+#logged{
+    position: relative;
+    display: inline;
+}
+#logged{
+   display: inline-block; 
+   background-color:whitesmoke;
+}
+img{
+    width: 7rem ;
+    height: 7rem;
+    border-radius: 10rem;
+}
+
+button{
+    background-color: rgb(95, 95, 241);
+    padding:0.5rem 0.5rem;
+    border-radius: 12px;
+    color:white;
+}
+.edit{
+    display: block;
+    background-color: yellowgreen;
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 3px green ;
+    border-radius: 5px;
+    height: 24rem;
+    display: none;
+}
+.update-title{
+    text-align: center;
+    color:rgb(22, 21, 21);
+    text-decoration: underline;
+    
+}
+#p{
+    float: right;
+    font-size: larger;
+    padding:5px;
+}
+#updates-btn{
+background-color: rgb(60, 148, 60);
+padding:1rem 2rem 1rem 7rem;
+font-size: 1rem;
+width: 18rem;
+display: flex;
+}
+#input[type=text]{
+    height: 2.5rem;
+    width: 18rem;
+    border:3px solid green;
+    border-radius: 5px;
+}
+#textare{
+    width: 18rem;
+    height: 10rem;
+    border:3px solid green;
+
+}
+#input[type=text]:hover{
+    background-color: whitesmoke;
+
+}
+#input[type=text]:focus{
+    background-color: whitesmoke;
+}
+
+/* media query for navbar */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: white;
+
+
+    }
+    .nav-ilist{
+        display: block;
+       color :black;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 2rem;
+    }
+       .nav-link{
+      
+        padding:14px 28px;
+       
+       
+       }
+       .nav {
+        background-color: white;
+        height: 18.3rem ;
+        box-shadow: 1px 1px 1px grey;
+       }
+      
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: white;
+    }
+        .nav-link{
+     
+            padding:2px 4px;
+           
+        }
+ 
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    body{
+        background-color: white;
+
+    }
+    .nav-link{
+     
+        padding:6px 12px;
+        
+    }
+
+ 
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: white;
+    }
+    .nav-link{
+     
+        padding:14px 28px;
+       
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: white;
+    }
+  
+ .nav-link{
+     
+     padding:12px 24px;
+    
+ }
+
+}
+
+/* end of  media query for navbar */
+
+
+/* blog page */
+
+  .blog-section{
+      display: flex;
+      flex-direction: row;
+      font-family: 'Roboto', sans-serif;
+  }  
+  .blog-sec{
+      display: flex;
+      flex-direction:column;
+      justify-content: space-evenly;
+     
+  }
+  .trend-post{
+      display: flex;
+      flex-direction: row;
+      padding-left: 8rem;
+      }
+      .title{
+          text-align: center;
+      }
+      .trend-art{
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 2px 2px 2px grey;
+        padding:10px;
+        margin: 10px;
+        height: 230px ;
+        width: 300px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .read-mm{
+        padding:1rem 0 0 10rem;
+     }
+     #read-more{
+         padding:0.2rem 0.2rem;
+        color:black;
+        border: 2px solid grey;
+        background-color:white;
+        text-align: center;
+    }
+    #read-more:hover{
+   
+        color:white;
+        border: 1px solid white;
+        background-color:grey;
+        text-align: center;
+    
+    }
+    
+   
+    
+    .trend-post{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+    .recent-post{
+        padding:2px 0rem 0  8rem;
+    }
+    .recent-art{
+        display: flex;
+        flex-direction:row;
+        background-size: auto;
+        background-color:white;
+        box-shadow: 0px 2px 2px 2px grey;
+        justify-content: center;
+        text-align: center;
+        padding:10px;
+        margin: 10px;
+        height: 230px;
+        width: 600px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .work{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+         padding:1rem;
+         }
+ 
+ .text{
+     display:flex;
+     justify-content: flex-start;
+     text-align: left;
+     font-size: 0.8rem;
+ }
+ a{
+     text-decoration: none;
+ }
+ 
+.read{
+border:2px solid grey;
+background-attachment:cover;
+background-size: auto;
+color: black;
+font-size: 1rem;
+ text-align: center;   
+ padding:12px 12px ;
+ display: flex;
+ }
+ .read:hover{
+    border:2px solid grey;
+  background:grey;
+    color: white;
+    font-size: 1rem;
+     text-align: center;   
+     padding:12px 12px ;
+     display: flex;
+     }
+ .read-m{
+     display: flex;
+    justify-content: end;
+    padding:0rem 0 0rem 19rem;
+ }
+#date{
+background-color: white;
+color:black;
+font-size: 0.7rem;
+
+}
+
+    .se-top{
+         float: right;
+         background-color: whitesmoke;
+         height: 500px ;
+         width: 300px;
+         box-shadow: 0px 2px 2px 2px grey;
+         text-align:center;
+         padding:1rem;
+   }
+   ol{
+       list-style: none;
+   }
+   .lis{
+       text-align: left;
+       color:black;
+       padding:0.5rem 1rem 0 0.5rem;
+   }
+ 
+  
+input[type=text]{
+  height: 2rem;
+  width: 10rem;
+}
+input[type=button]{
+    height: 2rem;
+    width: 5rem; 
+}
+
+.date{
+    background: white;
+    color:black;
+}
+#a{
+   padding:0.6rem 0.7rem 0.6rem 0.7rem;
+    color:black;
+    border:1px solid white;
+}
+#a:hover{
+    color:grey;
+    border:1px solid grey;
+    animation: 1s;
+}
+.pagination{
+    display: flex;
+    padding:1rem 0 0  13rem;
+}
+.pagination .active{
+padding:5rem;
+    color:blue;
+    border:1px solid grey;
+    animation: 1s;
+}
+#aa{
+    padding:0.5rem;
+     color:grey;
+     background-color:white ;
+ }
+ #a.active{
+    padding:0.5rem;
+    color:white;
+    background-color:grey; 
+ }
+
+/*end of blog page*/
+.call{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25rem;
+    }
+    .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    color:black;
+    }
+    i{
+        color:black;
+        font-size:2rem ;
+        padding:1.5rem 1.5rem;
+    }
+    i:hover{
+        color: grey;
+    }
+    .def-titlee{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    }
+    

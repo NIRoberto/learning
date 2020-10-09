@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+   
+    
+    <!-- css file-->
+    <link rel="stylesheet" href="Pages/css/register.css">
+    <!-- end of css file-->
+    <!---google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <!---end of google font-->
+  </head>
+<body>
+     <!--nav bar -->
+     <header class="nav">
+        <div class="nav-main">
+        <div class="nav-section">
+            <ul class="nav-list">
+                    <li class="nav-ilist"><a href="#" class="nav-link" target="_blank">home</a></li>
+                    <li class="nav-ilist"><a  href="Pages/html/about.html" class="nav-link" target="_blank">about</a></li>
+                    <li class="nav-ilist"><a href="Pages/html/portfolio.html" target="_blank" class="nav-link">portfolio</a></li>
+                    <li class="nav-ilist"><a href="Pages/html/blog.html" class="nav-link" target="_blank">blog </a></li>
+                    <li class="nav-ilist"><a href="Pages/html/loginpage.html" target="_blank" class="nav-link">login</a></li>
+                    <li class="nav-ilist"><a href="Pages/html/register.html"  class="nav-link" id="logout">logout</a></li>
+                </ul>
+            </div>
+            
+            <h1 class="logo">Robert</h1>
+          </div>
+    </header>
+<!---end of nav bar -->
+    <div class="loginpage">
+        <div class="login">
+        <form  action="#" onsubmit="validate()" id="formm" >
+            <h1 class="h1">Create acount</h1><br>
+            
+            <input type="email" id="email" placeholder="Enter your email                                      @gmail.com" ><br>
+            <span id="demoss"></span>
+            <input type="password" placeholder="Enter new password " id="password" ><br>
+            <span id="demos"></span><div>
+            <button  type="submit">Register</button></div>
+        </div>
+        </form>
+    </div>
+        
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCELW2Q7Gueua89BXiO1o1TZC_TU08yeB4",
+    authDomain: "login-8520a.firebaseapp.com",
+    databaseURL: "https://login-8520a.firebaseio.com",
+    projectId: "login-8520a",
+    appId: "1:454183343167:web:998c5e501d54798f87d48a",
+    measurementId: "G-EYZ8SN26V7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  const db =firebase.firestore();
+  const auth=firebase.auth();
+
+  
+</script>
+<script src="/Pages/js/index.js"></script>
+
+<script src="/Pages/js/auth.js"></script>
+
+   
+   <!--javascript file-->
+ <script src="/Pages/js/validation.js"></script>
+ <!--end of the javascript file-->
+     </body>
+</html>

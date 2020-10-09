@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>users-panel</title>
+     <!--font awasome -->
+     <script src="https://kit.fontawesome.com/9b2e6ce5e3.js" crossorigin="anonymous"></script>
+     <!--end of font awasome -->
+ <!--google font -->
+     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+     <!--end of google font-->
+     <!-- css file-->
+     <link rel="stylesheet" href="/UI/admin css/css.css">
+     <!--end of css file-->
+</head>
+<body>
+     <!--nav bar -->
+     <header class="nav">
+         <div class="nav-logo">
+      <p class="logo "> Robert</p>
+        </div>
+        <div class="nav-header">
+            <ul class="nav-list"> 
+               <li><a href="/UI/html/index.html"  class="a nav-ilist"> Home</a></li>
+                    <li><a href="/UI/html/loginpage.html" class="a nav-ilist">Login</a></li>
+                    <li class="nav-ilist"class="a"><a href=""class=" nav-link fas fa-user-tag">Dashboard</a></li>
+                
+                </ul>
+           
+        </div>
+           
+          
+                
+       
+    </header><hr>
+<!---end of nav bar -->
+<section class="wrapper">
+    <div class="wrapper-side">
+    <div class="left-wrapper">
+        <ul class="manage">
+            <li class="manage-list"><a class="aa" href="/UI/admin post/index.html"> Manage posts</a></li><hr>
+            <li class="manage-list"><a class="aa" href="/UI/admin users/index.html">Manage users</a></li><hr>     
+            <li class="manage-list"><a class="aa" href="/UI/admin topics/index.html">Manage topics</a></li><hr>
+        </ul>
+    </div>
+     
+    <div class="content-wrapper">
+        <div class="button-content">
+            <a href="/UI/admin topics/create.html" class="btn btn-big">Add topics</a>
+            <a href="/UI/admin topics/index.html" class="btn btn-big">Manage topics</a>
+        </div>
+        <div class="table-for-button">
+            <h1 class="heading">Add local or admin  users</h1>
+            <form action="" class="formmm">
+                <input type="text" placeholder="enter username"><br><br>
+                <input type="email"placeholder="enter your email"><br><br>
+                <input type="password" name="new" id="password" placeholder="enter new password "><br><br>
+                <input type="password" name="confirm" id="password" placeholder="confirm password"><br><br>
+                <select name="role" id="seletct">
+                    <option value="blank">choose role here</option>
+                    <option value="role">Admin</option>
+                    <option value="role">local</option>
+
+                </select><br><br>
+                <button type="submit">Save user</button>
+            </form>
+           
+        </div>
+    </div>
+</div>
+
+</section>
+</body>
+</html>

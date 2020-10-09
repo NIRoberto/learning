@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/*-------nav-bar -------*/
+
+.nav {
+  background-color: white;
+  height: 66px;
+  box-shadow: 0px 0.1px 3px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
+}
+.nav .logo {
+  float: left;
+  text-align: center;
+  display: flex;
+  font-family: "Lobster", cursive;
+  margin-left: 3em;
+  font-size: small;
+}
+.nav .logo > h1 {
+  text-align: center;
+}
+.nav-list {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 5px 0 0;
+  margin-right: 3rem;
+}
+.nav-ilist {
+  text-decoration: none;
+  padding: 2px 12px;
+  margin: 0px;
+  /* padding: 0px; */
+  text-align: center;
+  /* border: 1px solid red; */
+  float: left;
+}
+
+.nav-link {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #444;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.nav .nav-list .nav-ilist .nav-link:hover {
+  color: rgb(17, 98, 219);
+  transition: 0.3s;
+}
+.nav .menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
+/*-------------end of navbar ------------------*/
+/*  media query for nav bar */
+@media (max-width: 700px) {
+  .nav {
+    position: relative;
+  }
+  .nav-ilist {
+    text-decoration: none;
+    padding: 2px 12px;
+    margin: 0px;
+    text-align: center;
+  }
+  .nav-link {
+    left: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+    margin-top: 0;
+    float: left;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    transform: translateX(100%);
+    /* left: -100%; */
+    transition: 0.6s ease-in;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+  }
+  .showing {
+    transform: translateX(0%);
+  }
+  .nav-link {
+    padding: 12px 10px;
+    width: 100%;
+    /* border: 1px solid red; */
+    float: left;
+  }
+  .nav .menu-icon {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+/*  media query for nav bar */
+.single {
+  padding: 3em;
+}
+.single h1 {
+  color: rgb(17, 120, 236);
+  padding-left: 8rem;
+}
+.single p {
+  padding: 1em 5em 0;
+  float: left;
+}
+.single i {
+  color: grey;
+}
+.single-blog {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10% 70% 20%);
+  grid-template-rows: repeat(3, auto);
+  padding-top: 5rem;
+}
+.single-section {
+  background-color: white;
+  padding: 5px 5px 0 8px;
+  box-shadow: 2px 2px 12px rgb(0, 0, 0, 0.1);
+}
+.single-section p {
+  line-height: 1.3em;
+  font-size: large;
+  padding: 5px 5px 5px 5px;
+}
+button:hover {
+  background-color: rgb(66, 66, 66);
+}
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+  height: 2em;
+}
+textarea {
+  width: 100%;
+  height: 6rem;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+textarea:focus {
+  width: 100%;
+  height: 6rem;
+  outline: none;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+button {
+  width: 8em;
+  height: 2.5em;
+  background-color: gray;
+  color: whitesmoke;
+  outline: none;
+  border: 1px solid white;
+}
+
+.single-comment {
+  /* border: 1px solid rgb(177, 11, 11); */
+  padding: 2em 2em;
+}
+
+.single-comment span a {
+  float: right;
+  padding-right: 1em;
+  padding-top: 1em;
+  text-decoration: none;
+}
+/* footer */
+/* footer */
+ul {
+  list-style: none;
+}
+.contact-me,
+.contact-me-s {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-color: grey;
+  color: grey;
+  list-style: none;
+  margin-left: 0;
+}
+.contact-me .contact-me-s .contact-me-s1 {
+  flex: 1;
+  /* border: 1px solid red; */
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.location {
+  padding-left: 8rem;
+}
+.location #social {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+#social li a {
+  color: white;
+}
+#social li {
+  color: white;
+}
+.location i {
+  color: wheat;
+}
+#link li {
+  color: white;
+
+  padding: 5px 5px;
+}
+
+#social li {
+  color: white;
+
+  display: inline-block;
+  font-size: 1.3em;
+  padding: 1rem 1rem;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.input[type="email"] {
+  height: 1.7rem;
+  width: 15rem;
+  color: grey;
+  background: rgb(255, 249, 249);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 12px;
+}
+
+.textarea {
+  height: 5rem;
+  width: 15rem;
+  color: grey;
+  background: rgb(247, 245, 245);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: black;
+}
+#button {
+  background: rgb(114, 97, 3);
+  padding: 7px 9px;
+  color: rgb(243, 250, 249);
+  text-decoration: none;
+  border-radius: 5px;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(212, 211, 211);
+}
+#footer p {
+  font-size: smaller;
+}
+
+/* end of footer */

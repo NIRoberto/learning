@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+   <link rel="stylesheet" href="/UI/css/blogs.css">
+   <script src="/UI/js/updateprof.js"></script>
+   <script src="https://kit.fontawesome.com/9b2e6ce5e3.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--nav bar -->
+    <header class="nav">
+        <div class="nav-main">
+        <div class="nav-section">
+            <ul class="nav-list">
+                <li class="nav-ilist"><a href="/" class="nav-link" target="_blank">home</a></li>
+                <li class="nav-ilist"><a href="/UI/html/portfolio.html" target="_blank" class="nav-link">portfolio</a></li>
+                <li class="nav-ilist"><a href="/UI/html/blog.html" class="nav-link" target="_blank">blog </a></li>
+
+                <li class="nav-ilist"><a href="/UI/admin post/index.html" class="nav-link" target="_blank">Dashboard</a></li>
+
+                <div id="logged">
+                <li class="nav-ilist"><a href="/UI/admin post/index.html" target="_blank" class="nav-link fas fa-caret-down"> Robert (admin) </a>
+
+                <div id="profile">
+               <a href="/UI/admin post/update.html"> <img id="update-profile " src="/UI/img/ROBERT.jpg" alt=""></a>
+                <button  onclick="logout()" type=submit>Logout</button>
+                </div>
+                </div></li>
+
+            </ul>
+           </div>
+            <h1 class="logo">Robert</h1>
+          </div>
+   
+    </header><br><br><br>
+<!---end of nav bar -->
+<!---trending post -->
+<div class="blog-section">
+    <div class="blog-sec">
+ <div class="trend-post">
+     
+  <div class="trend-art">
+    <h1 class="title">web development</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae necessitatibus placeat eveniet impedit, eos sunt, nostrum nam tenetur animi nemo voluptatibus voluptates, tempore voluptatem qui incidunt non sit? Quas, consequatur.</p>
+ 
+    <span class="date">11 august 2020</span>
+    <div class="read-mm">
+   <a id="read-more" href="/UI/html/singleblog.html">Read more &raquo;</a>
+  </div>
+ </div>
+ <div class="trend-art">
+    <h1 class="title">web development</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae necessitatibus placeat eveniet impedit, eos sunt, nostrum nam tenetur animi nemo voluptatibus voluptates, tempore voluptatem qui incidunt non sit? Quas, consequatur.</p>
+     <span class="date">11 august 2020</span>
+     <div class="read-mm">
+   <a id="read-more" href="/UI/html/singleblog.html">Read more &raquo;</a>
+  </div>
+ </div>
+ <div class="trend-art">
+    <h1 class="title">web development</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae necessitatibus placeat eveniet impedit, eos sunt, nostrum nam tenetur animi nemo voluptatibus voluptates, tempore voluptatem qui incidunt non sit? Quas, consequatur.</p>
+ 
+    <span class="date">11 august 2020</span>
+    <div class="read-mm">
+   <a id="read-more" href="/UI/html/singleblog.html">Read more &raquo;</a>
+  </div>
+ </div>
+ </div>
+
+ <div class="recent-post">
+   <div class="edit">
+   <form >
+     <p id="p">X</p><br>
+     <h3 class="update-title">Update your blog here..</h3><br>
+     <input id="input" type="text" placeholder="Enter the title of your blog here "><br><br>
+<textarea name="body of blog" id="textare" cols="30" rows="10">enter your short description here..</textarea><br><br>
+<button id="updates-btn">Update</button><br>
+  </form>
+    
+<div>
+</div></div>
+</div>
+<div class="pagination">
+  <a id="aa" href="#">&laquo;</a>
+  <a id="a" class="active" href="#">1</a>
+  <a id="a"  href="#">2</a>
+  <a id="a" href="#">3</a>
+  <a id="a" href="#">4</a>
+  <a id="a" href="#">5</a>
+  <a id="a" href="#">6</a>
+  <a id="aa" href="#">&raquo;</a>
+  </div>
+<footer class="social-media">
+   <h1 class="def-titlee">Follow me </h1>
+<div class="social">
+  
+       <div><a href="https://www.facebook.com/roberto.will.906" target="_blank"><i class="fab fa-facebook-square li"></i></div>
+      <div><a href=" https://twitter.com/RobertNiyitanga" target="_blank"><i class="fab fa-twitter-square li"></i></a></div>
+      <div><a href="https://www.instagram.com/niyitanga.r/?hl=en" target="_blank"></a><i class="fab fa-instagram-square li"></i></a></div>
+       </div>
+  <h5 class="def-titlee">copyright &COPY; 2020 by Robert NIYITANGA</h5>
+</div>
+</footer>
+<!--- end of the footer -->
+</div>
+
+
+<!--- end of trending post -->
+<!---recent post -->
+
+   
+  <!---end of recent post -->
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCELW2Q7Gueua89BXiO1o1TZC_TU08yeB4",
+    authDomain: "login-8520a.firebaseapp.com",
+    databaseURL: "https://login-8520a.firebaseio.com",
+    projectId: "login-8520a",
+    storageBucket: "login-8520a.appspot.com",
+    messagingSenderId: "454183343167",
+    appId: "1:454183343167:web:998c5e501d54798f87d48a",
+    measurementId: "G-EYZ8SN26V7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db =firebase.firestore();
+  const auth=firebase.auth();
+
+
+</script>
+<script src="/UI/js/adminjs.js"></script>
+<script src="/UI/js/post.js"></script>
+</body>
+</html>
+
+

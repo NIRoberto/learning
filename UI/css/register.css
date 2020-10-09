@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-------nav-bar -------*/
+.nav {
+  background-color: white;
+  height: 60px;
+  box-shadow: 0px 0.1px 3px rgba(0, 0, 0, 0.5);
+}
+.logo {
+  color: black;
+  font-size: 35px;
+  padding: 5px 0 10px 50px;
+  font-family: "Lobster", cursive;
+  text-align: start;
+  display: flex;
+  justify-content: start;
+}
+.nav-section {
+  margin: 0;
+}
+.nav-list {
+  float: right;
+  list-style: none;
+  padding: 5px 100px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  display: flex;
+  padding: 8px 28px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-link:hover {
+  color: rgb(12, 90, 236);
+}
+.nav-link:active {
+  color: rgb(12, 90, 236);
+}
+.burder {
+  display: none;
+  float: right;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 8px;
+  display: none;
+}
+/* media query for navbar */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 560px) {
+  body {
+    background-color: white;
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    align-items: center;
+    color: black;
+    right: 0px;
+    float: right;
+    top: 3.8rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: white;
+    border-left: 1px solid rgb(226, 222, 222);
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+    opacity: 0.6;
+    /* box-shadow: 0px 0.1px 3px rgba(0, 0, 0, 0.5); */
+  }
+
+  .nav-link {
+    padding: 1rem 3rem;
+    color: #666;
+  }
+  /* .nav-active {
+    transform: translateX(0%);
+  } */
+  .nav {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 0.1px 3px rgba(0, 0, 0, 0.5);
+  }
+  img {
+    display: block;
+    position: relative;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: white;
+  }
+  .nav-link {
+    display: flex;
+    text-align: center;
+    padding: 12px 14px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+  .nav-link {
+    display: flex;
+    text-align: center;
+    padding: 16px 18px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: white;
+  }
+  .nav-link {
+    padding: 14px 28px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: white;
+  }
+
+  .nav-link {
+    padding: 18px 28px;
+  }
+}
+
+/* end of  media query for navbar */
+
+/*-------------end of navbar ------------------*/
+body {
+  /* background-image: url(/UI/img/bgg.jpg); */
+  font-family: "Roboto", sans-serif;
+}
+
+.h1 {
+  color: #666;
+}
+.loginpage {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 7rem 0 0 40rem;
+  color: white;
+  width: 24.8rem;
+  height: 30rem;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 20.1rem;
+  height: 3rem;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  color: black;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: whitesmoke;
+}
+button[type="submit"] {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background-color: rgb(26, 126, 240);
+  color: white;
+}
+
+a {
+  padding-right: 2px;
+  text-decoration: none;
+  color: rgb(26, 126, 240);
+}
+.link-to-login {
+  color: black;
+  margin-top: 10px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .div {
+    display: flex;
+    float: left;
+    /* justify-content: center; */
+    /* align-content: center; */
+    color: black;
+  }
+  .link-to-login {
+    color: black;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .loginpage {
+    padding: 20rem 0 0 0rem;
+    color: white;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 14.1rem;
+    height: 2rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  button {
+    width: 3rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: rgb(26, 126, 240);
+    color: white;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .div {
+    display: flex;
+    float: left;
+    /* justify-content: center; */
+    /* align-content: center; */
+    color: black;
+  }
+  .loginpage {
+    padding: 10rem 0 0 17rem;
+    color: white;
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: 14.1rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  button {
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: rgb(26, 126, 240);
+    color: white;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .div {
+    display: flex;
+    float: left;
+    /* justify-content: center; */
+    /* align-content: center; */
+    color: black;
+  }
+  .loginpage {
+    padding: 10rem 0 0 17rem;
+    color: white;
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: 14.1rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  button {
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: rgb(26, 126, 240);
+    color: white;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .loginpage {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 9rem 0 0 40rem;
+    color: white;
+    width: 30rem;
+    height: 25rem;
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: 20.1rem;
+    height: 3rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  button {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: rgb(26, 126, 240);
+    color: white;
+  }
+}

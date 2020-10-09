@@ -1,0 +1,7 @@
+{
+    "env":{
+        "pw":"themaster",
+        "JWT_KEY":"thereturn"
+       
+    }
+}
